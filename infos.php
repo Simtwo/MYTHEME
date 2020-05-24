@@ -16,14 +16,6 @@ get_header();
 	<p><?php the_field('contact'); ?></p>
 </div>
 
-<div class="newsletter">
-	<h3>Newsletter</h3>
-		<div class="block_newsletter">
-	<?php echo do_shortcode( '[contact-form-7 id="117" title="Contact form 1"]' ); ?>
-	</div>
-</div>
-
-
 <div class="informations2">
 		<h3>Références</h3>
 		<p><?php the_field('clients'); ?></p>
