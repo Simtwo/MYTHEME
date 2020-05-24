@@ -1,0 +1,13 @@
+
+@mixin fadein {
+animation: fadein 1s;
+ -moz-animation: fadein 1s; /* Firefox */
+ -webkit-animation: fadein 1s; /* Safari and Chrome */
+ -o-animation: fadein 1s; /* Opera */
+}
+@mixin fadeout {
+animation: fadeout 1s;
+ -moz-animation: fadeout 1s; /* Firefox */
+ -webkit-animation: fadeout 1s; /* Safari and Chrome */
+ -o-animation: fadeout 1s; /* Opera */
+}

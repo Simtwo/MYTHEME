@@ -1,3 +1,4 @@
+@import "_mixin.scss";
 /*
 Theme Name: perso theme
 Theme URI: theme perso
@@ -6,6 +7,7 @@ Author: Sim*n-B*uchard
 Author URI: www.simonbouchard.fr
 Version: 2.5
 */
+
 $color : black;
 
 $margeit: 10px;
@@ -28,6 +30,11 @@ $information-small: "only screen and (max-width : 720px)";
 
 $break-small: 720px;
 $break-large: 1000px;
+
+
+
+
+
 
 
 .overlay h2{
@@ -197,6 +204,7 @@ input:checked + label::before {
  /* Page info */
 
 .informations {
+  @include fadein;
   width: calc(100% - (#{$margeit}*2));
   margin-left: $margeit;
   margin-right: $margeit;
@@ -207,6 +215,7 @@ input:checked + label::before {
 
 
 .informations2 {
+  @include fadein;
   padding-top: $margeit;
   width: calc(100% - (#{$margeit}*2));
   margin-left: $margeit;
@@ -216,6 +225,7 @@ input:checked + label::before {
   margin-bottom: $margeit;
 }
 .informations3 {
+  @include fadein;
   padding-top: $margeit;
   width: calc(100% - (#{$margeit}*2));
   margin-left: $margeit;
@@ -428,4 +438,40 @@ line-height: normal;
   }
 
 
+}
+
+
+
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }
