@@ -96,7 +96,6 @@ ul.allarticle {
 
 ul.allarticle li:nth-child(2n+1){
   margin-left: $margeit;
-  margin-right: calc(#{$margeit} / 2);
   background-color: red;
 }
 
