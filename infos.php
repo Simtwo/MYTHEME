@@ -26,7 +26,7 @@ get_header();
 
 <div class="informations2">
 		<h3>Références</h3>
-		<div class="refs"><?php the_field('clients'); ?></p>
+		<p><?php the_field('clients'); ?></p>
 </div>
 
 
