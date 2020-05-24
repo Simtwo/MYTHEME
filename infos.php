@@ -19,14 +19,14 @@ get_header();
 <div class="newsletter">
 	<h3>Newsletter</h3>
 		<div class="block_newsletter">
-	<?php echo do_shortcode( '[contact-form-7 id="60" title="Contact form 1"]' ); ?>
+	<?php echo do_shortcode( '[contact-form-7 id="117" title="Contact form 1"]' ); ?>
 	</div>
 </div>
 
 
 <div class="informations2">
 		<h3>Références</h3>
-		<div class="list"><?php the_field('clients'); ?></div>
+		<p><?php the_field('clients'); ?></p>
 </div>
 
 

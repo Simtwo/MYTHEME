@@ -4,8 +4,8 @@
 <title><?php bloginfo('name'); ?></title>
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="eee"/>
-<meta name="keywords" content="eeee">
+<meta name="description" content="Design graphique & développement web."/>
+<meta name="keywords" content="Simon Bouchard, graphiste, graphisme, paris">
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 <link href="ss" rel="shortcut icon" type="image/x-icon" />
 
