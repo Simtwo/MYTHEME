@@ -6,9 +6,9 @@ get_header();
 ?>
 
 
-<?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
 <div id="primary" class="content-area">
   <ul class="allarticle">
+    <?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
 
       <li class="articlehome">
       <a href="<?php the_permalink(); ?>">
@@ -23,12 +23,13 @@ get_header();
       </div>
         </a>
       </li>
+    <?php endwhile; ?>
+    <?php endif; ?>
 
   </ul>
 </div><!-- #primary -->
 
 
-<?php endwhile; ?>
-<?php endif; ?>
+
 <?php
 get_footer();
