@@ -6,7 +6,7 @@ get_header();
 ?>
 
 <div id="primary" class="content-area">
-      <?php echo do_shortcode('[searchandfilter id="31" show="results"]'); ?>
+      <?php echo do_shortcode('[searchandfilter id="22" show="results"]'); ?>
 
 </div><!-- #primary -->
 
