@@ -29,8 +29,36 @@ $information-small: "only screen and (max-width : 720px)";
 $break-small: 720px;
 $break-large: 1000px;
 
+.informations2  ul {
+  list-style: none;
+  font-size: $fontsize;
+  margin-left: 0.7em;
+}
+.informations2 ol {
+  counter-reset: number;
+  list-style-type: none;
+  margin-left: 0.7em;
+}
+.informations2 li {
+  padding-bottom:  calc(#{$margeit} / 2) ;
+}
 
+.informations2 ol li:before {
+  counter-increment: number;
+  content: counter(number)"\a0";
+  position: absolute;
+  display: inline-block;
+  width: 1em;
+  margin-left: -0.7em;
+}
 
+.informations2 ul li:before {
+content: "-";
+display: inline-block;
+width: 0.6em;
+margin-left: -0.6em;
+margin-top:2px;
+}
 
 
 .overlay h2{
