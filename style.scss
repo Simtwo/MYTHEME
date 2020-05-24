@@ -147,7 +147,6 @@ input {
   position: relative;
 margin-right: $margeit;
   color: $color;
-  background-color: white;
   white-space: nowrap;
   cursor: pointer;
   user-select: none;
@@ -177,7 +176,7 @@ margin-right: $margeit;
 .menu ul li a:active {
     background-color: blue;
 }
-.menu ul li.current_page_item a {background: #4654FF;}
+.menu ul li.current_page_item a {}
 
 
 label:hover, input:focus + label {
