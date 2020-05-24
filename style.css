@@ -1,11 +1,11 @@
 @charset "UTF-8";
 /*
-Theme Name: THEME SIMON BOUCHARD
-Theme URI: Base de travail - Simon Bouchard
-Description: Base pour construire un theme
-Author: Simon Bouchard
+Theme Name: perso theme
+Theme URI: theme perso
+Description: theme perso
+Author: Sim*n-B*uchard
 Author URI: www.simonbouchard.fr
-Version: 1
+Version: 2
 */
 .overlay h2 {
   font-size: 0.8em;
@@ -67,7 +67,6 @@ ul.allarticle {
 
 ul.allarticle li:nth-child(2n+1) {
   margin-left: 10px;
-  margin-right: calc(10px / 2);
   background-color: red;
 }
 
@@ -98,6 +97,11 @@ ul.allarticle li:nth-child(2n) {
   left: 0;
 }
 
+input {
+  position: absolute;
+  left: -9999px;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -120,12 +124,7 @@ ul.allarticle li:nth-child(2n) {
   transition: background-color 0.2s, box-shadow 0.2s;
 }
 
-#page .control input {
-  position: absolute;
-  left: -9999px;
-}
-
-#page .control label {
+label {
   font-size: 0.7em !important;
   font-weight: bold !important;
   text-transform: uppercase;
@@ -195,82 +194,6 @@ input:checked + label::before {
   padding-bottom: 10px;
 }
 
-div.wpcf7-response-output {
-  margin: 10px 0px 0px 0px !important;
-  padding: 1em 1em !important;
-  border: none !important;
-  font-size: 0.8em;
-  background-color: #ffef8a;
-  transition: 0.4s;
-}
-
-div.wpcf7-mail-sent-ok {
-  border-color: green;
-  background-color: #8dff87;
-  border: 1px solid green !important;
-}
-
-span.wpcf7-not-valid-tip {
-  display: none !important;
-}
-
-.newsletter {
-  padding-top: 10px;
-  width: calc(100% - (10px*2));
-  margin-left: 10px;
-  margin-right: 10px;
-  border-bottom: 1px solid black;
-  padding-bottom: 10px;
-}
-
-@media screen and (max-width: 720px) {
-  .block_newsletter {
-    width: 100%;
-  }
-}
-@media (min-width: 720px) and (max-width: 1000px) {
-  .block_newsletter {
-    width: 50%;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .block_newsletter {
-    width: 33.3333%;
-  }
-}
-
-.newsletter input {
-  height: calc((10px*4));
-  -webkit-appearance: none;
-  border-radius: 0;
-}
-
-.newsletter input[type=email] {
-  background-color: #ebebeb;
-  width: 70%;
-  border: 1px solid black;
-  float: left;
-  color: black;
-  padding-left: 10px;
-}
-
-.newsletter input[type=email]::placeholder {
-  color: black;
-}
-
-.newsletter input[type=submit] {
-  width: 30%;
-  border-right: 1px solid black;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  border-left: none;
-}
-
-.newsletter input[type=submit]:hover {
-  background-color: #5cf785;
-  cursor: pointer;
-}
-
 .informations p {
   font-size: 1.2em;
   line-height: 1.2em;
@@ -284,7 +207,7 @@ span.wpcf7-not-valid-tip {
 }
 @media screen and (min-width: 1000px) {
   .informations p {
-    margin-right: 33.3333%;
+    margin-right: calc(10px*30);
   }
 }
 
@@ -296,12 +219,11 @@ span.wpcf7-not-valid-tip {
 @media screen and (max-width: 720px) {
   .informations2 p {
     margin-right: 10px;
-    columns: 1;
   }
 }
 @media screen and (min-width: 1000px) {
   .informations2 p {
-    margin-right: 33.3333%;
+    margin-right: calc(10px*30);
   }
 }
 
@@ -317,7 +239,7 @@ span.wpcf7-not-valid-tip {
 }
 @media screen and (min-width: 1000px) {
   .informations3 p {
-    margin-right: 33.3333%;
+    margin-right: calc(10px*30);
   }
 }
 
@@ -350,6 +272,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+}
+
+figurecaption {
+  display: none;
 }
 
 .bottom {
