@@ -7,39 +7,6 @@ Author: Sim*n-B*uchard
 Author URI: www.simonbouchard.fr
 Version: 2.3
 */
-.informations2 ul {
-  list-style: none;
-  font-size: 0.8em;
-  margin-left: 0.7em;
-}
-
-.informations2 ol {
-  counter-reset: number;
-  list-style-type: none;
-  margin-left: 0.7em;
-}
-
-.informations2 li {
-  padding-bottom: calc(10px / 2);
-}
-
-.informations2 ol li:before {
-  counter-increment: number;
-  content: counter(number) " ";
-  position: absolute;
-  display: inline-block;
-  width: 1em;
-  margin-left: -0.7em;
-}
-
-.informations2 ul li:before {
-  content: "-";
-  display: inline-block;
-  width: 0.6em;
-  margin-left: -0.6em;
-  margin-top: 2px;
-}
-
 .overlay h2 {
   font-size: 0.8em;
 }
@@ -244,18 +211,50 @@ input:checked + label::before {
   }
 }
 
-.informations2 p {
+.informations2 ul {
+  list-style: none;
   font-size: 0.8em;
-  line-height: 1.2em;
+  margin-left: 0.7em;
+}
+
+.informations2 ol {
+  counter-reset: number;
+  list-style-type: none;
+  margin-left: 0.7em;
+}
+
+.informations2 li {
+  padding-bottom: calc(10px / 2);
+}
+
+.informations2 ol li:before {
+  counter-increment: number;
+  content: counter(number) " ";
+  position: absolute;
+  display: inline-block;
+  width: 1em;
+  margin-left: -0.7em;
+}
+
+.informations2 ul li:before {
+  content: "-";
+  display: inline-block;
+  width: 0.6em;
+  margin-left: -0.6em;
+  margin-top: 2px;
+}
+
+.informations2 .content_colonne {
   columns: 2;
 }
 @media screen and (max-width: 720px) {
-  .informations2 p {
+  .informations2 .content_colonne {
     margin-right: 10px;
+    columns: 1;
   }
 }
 @media screen and (min-width: 1000px) {
-  .informations2 p {
+  .informations2 .content_colonne {
     margin-right: calc(10px*30);
   }
 }

@@ -29,37 +29,6 @@ $information-small: "only screen and (max-width : 720px)";
 $break-small: 720px;
 $break-large: 1000px;
 
-.informations2  ul {
-  list-style: none;
-  font-size: $fontsize;
-  margin-left: 0.7em;
-}
-.informations2 ol {
-  counter-reset: number;
-  list-style-type: none;
-  margin-left: 0.7em;
-}
-.informations2 li {
-  padding-bottom:  calc(#{$margeit} / 2) ;
-}
-
-.informations2 ol li:before {
-  counter-increment: number;
-  content: counter(number)"\a0";
-  position: absolute;
-  display: inline-block;
-  width: 1em;
-  margin-left: -0.7em;
-}
-
-.informations2 ul li:before {
-content: "-";
-display: inline-block;
-width: 0.6em;
-margin-left: -0.6em;
-margin-top:2px;
-}
-
 
 .overlay h2{
   font-size: $fontsize;
@@ -269,12 +238,43 @@ input:checked + label::before {
   }
 }
 
-.informations2 p{
-    font-size: $fontsize;
-    line-height: $line;
+
+.informations2  ul {
+  list-style: none;
+  font-size: $fontsize;
+  margin-left: 0.7em;
+}
+.informations2 ol {
+  counter-reset: number;
+  list-style-type: none;
+  margin-left: 0.7em;
+}
+.informations2 li {
+  padding-bottom:  calc(#{$margeit} / 2) ;
+}
+
+.informations2 ol li:before {
+  counter-increment: number;
+  content: counter(number)"\a0";
+  position: absolute;
+  display: inline-block;
+  width: 1em;
+  margin-left: -0.7em;
+}
+
+.informations2 ul li:before {
+content: "-";
+display: inline-block;
+width: 0.6em;
+margin-left: -0.6em;
+margin-top:2px;
+}
+
+.informations2 .content_colonne{
       columns: 2;
       @media screen and (max-width: $break-small) {
   margin-right: $margeit;
+  columns: 1;
       }
       @media screen and (min-width: $break-large) {
   margin-right: calc(#{$margeit}*30);

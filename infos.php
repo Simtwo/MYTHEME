@@ -18,7 +18,7 @@ get_header();
 
 <div class="informations2">
 		<h3>Références</h3>
-		<p><?php the_field('clients'); ?></p>
+		<div class="content_colonne"><?php the_field('clients'); ?></p>
 </div>
 
 
