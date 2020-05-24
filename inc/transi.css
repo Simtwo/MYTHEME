@@ -1,0 +1,36 @@
+div.slide-up p.onetext {
+  animation: slide-up 5s normal forwards;
+
+}
+div.slide-up p.twotext {
+  animation: slide-up 5s normal forwards;
+  animation-delay: 0.2s;
+
+}
+div.slide-up p.threetext {
+  animation: slide-up 5s normal forwards;
+  animation-delay: 0.3s;
+}
+
+div.slide-up p {
+  transform: translateY(150%);
+
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(150%);
+  }
+
+  10% {
+    transform: translateY(-1%);
+  }
+
+  90% {
+    transform: translateY(-1%);
+  }
+
+  100% {
+    transform: translateY(-130%);
+  }
+}
