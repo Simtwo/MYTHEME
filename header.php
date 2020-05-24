@@ -13,12 +13,9 @@
 
 </head>
 
-
-
 <div id="page">
   <div class="control">
     <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
-<!-- echo do_shortcode('[searchandfilter id="31"]'); -->
 
   <?php
   wp_nav_menu(
