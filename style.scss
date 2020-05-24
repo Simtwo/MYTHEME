@@ -4,9 +4,10 @@ Theme URI: theme perso
 Description: theme perso
 Author: Sim*n-B*uchard
 Author URI: www.simonbouchard.fr
-Version: 2
+Version: 2.1
 */
 $color : black;
+
 $margeit: 10px;
 $margeitbottom: 9px;
 
@@ -95,6 +96,7 @@ ul.allarticle {
 
 ul.allarticle li:nth-child(2n+1){
   margin-left: $margeit;
+  margin-right: calc(#{$margeit} / 2);
   background-color: red;
 }
 
