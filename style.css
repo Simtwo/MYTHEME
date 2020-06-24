@@ -7,6 +7,16 @@ Author: Sim*n-B*uchard
 Author URI: www.simonbouchard.fr
 Version: 2.5
 */
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+a:hover {
+  text-decoration: none;
+  color: red;
+}
+
 .overlay h2 {
   font-size: 0.8em;
 }
@@ -146,7 +156,7 @@ label {
 }
 
 .menu ul li a:active {
-  background-color: blue;
+  background-color: white;
 }
 
 label:hover, input:focus + label {
@@ -154,7 +164,7 @@ label:hover, input:focus + label {
 }
 
 input:checked + label {
-  color: blue;
+  color: red;
 }
 
 input:checked + label::before {
@@ -330,14 +340,10 @@ figurecaption {
 .bottom {
   font-size: 0.8em;
   border-top: 1px solid black;
+  border-bottom: 1px solid black;
   background-color: white;
   width: 100%;
-  position: fixed;
   z-index: 99999;
-  padding: 10px 10px 9px 10px;
-}
-
-.emptybottom {
   padding: 10px 10px 9px 10px;
 }
 
@@ -357,42 +363,9 @@ button {
 }
 
 #infoplus p {
-  padding-right: 30%;
+  padding-right: 80%;
   padding-bottom: 10px;
 }
-@media screen and (max-width: 720px) {
-  #infoplus p {
-    padding-right: 0%;
-  }
-}
-@media screen and (min-width: 1000px) {
-  #infoplus p {
-    padding-right: 40%;
-  }
-}
-
-#titleit {
-  width: 50%;
-  float: left;
-}
-
-#titleit button:hover {
-  color: red;
-  cursor: pointer;
-}
-
-#caption {
-  width: 40%;
-  float: left;
-  text-align: right;
-}
-
-#images_counter {
-  width: 10%;
-  float: left;
-  text-align: right;
-}
-
 [data-controls] {
   width: 50%;
   height: 80vh;
@@ -437,16 +410,6 @@ button {
     margin-right: 10px;
   }
 
-  #titleit {
-    width: 70%;
-    float: left;
-  }
-
-  #images_counter {
-    width: 30%;
-    float: left;
-  }
-
   #caption {
     display: none;
   }
@@ -485,6 +448,51 @@ button {
   to {
     opacity: 1;
   }
+}
+@media only screen and (min-width: 1000px) {
+  .bottom p {
+    padding-right: 60%;
+  }
+}
+@media only screen and (min-width: 721px) and (max-width: 999px) {
+  .bottom p {
+    padding-right: 50%;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .bottom p {
+    padding-right: 10px;
+  }
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  padding: 10px;
+  bottom: 0px;
+  z-index: 999999;
+  background-color: white;
+  border-top: 1px solid black;
+  font-size: 0.8em;
+}
+
+#titleit {
+  width: 50%;
+  padding-bottom: 10px;
+}
+
+#titleit button:hover {
+  color: red;
+  cursor: pointer;
+}
+
+#caption {
+  width: 40%;
+  float: left;
+}
+
+#images_counter {
+  text-align: right;
 }
 
 /*# sourceMappingURL=style.css.map */

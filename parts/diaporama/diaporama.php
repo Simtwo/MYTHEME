@@ -11,18 +11,12 @@ echo 'data-src="'.$image_src.'" data-srcset="'.$image_srcset.'" alt="'.$image_al
 
 
   <div class="bottom">
-
-        <a id="infoplus" style="display:none;">
-          <p><?php the_field('article'); ?></p>
-        </a>
-
-      <div id="titleit"><button onclick="myFunction()"><?php the_title(); ?> • infos</button></div>
-      <div id="caption">&nbsp</div>
-      <div id="images_counter"><span class="page_active">1</span>&nbsp;/&nbsp;<span class="pagination"></span>&nbsp</div>
-      </div>
+      <div id="titleit"><?php the_title(); ?></div>
+      <p><?php the_field('article'); ?></p>
   </div>
-  <div class="emptybottom">
-    &nbsp
+  <div class="footer">
+    <div id="caption">&nbsp</div>
+    <div id="images_counter"><span class="page_active">1</span>&nbsp;/&nbsp;<span class="pagination"></span>&nbsp</div>
   </div>
   <div class="container">
   <ul class="wp-block-gallery">

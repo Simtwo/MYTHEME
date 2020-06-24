@@ -9,6 +9,8 @@ Version: 2.5
 */
 
 $color : black;
+$red : red;
+$gray: gray;
 
 $margeit: 10px;
 $margeitbottom: 9px;
@@ -34,7 +36,8 @@ $break-large: 1000px;
 
 
 
-
+a {text-decoration: none; color: $gray;}
+a:hover {text-decoration: none; color: $red}
 
 
 .overlay h2{
@@ -182,7 +185,7 @@ margin-right: $margeit;
   color: red;
 }
 .menu ul li a:active {
-    background-color: blue;
+    background-color: white;
 }
 .menu ul li.current_page_item a {}
 
@@ -192,7 +195,7 @@ label:hover, input:focus + label {
 }
 
 input:checked + label {
-  color: blue;
+  color: red;
 }
 
 input:checked + label::before {
@@ -336,15 +339,13 @@ figurecaption {display: none;}
 .bottom {
   font-size: $fontsize;
   border-top:$border;
+  border-bottom:$border;
   background-color: white;
   width: 100%;
-  position: fixed;
  z-index: 99999;
   padding:  $margeit $margeit $margeitbottom $margeit;
  }
- .emptybottom {
-  padding:  $margeit $margeit $margeitbottom $margeit;
- }
+
 
 button {
   border: none;
@@ -361,24 +362,17 @@ line-height: normal;
 -webkit-appearance: none;
 }
 #infoplus p {
-  padding-right: 30%;
+  padding-right: 80%;
   padding-bottom: $margeit;
-  @media screen and (max-width: $break-small) {
-    padding-right: 0%;
+  @include respond-to(medium-screens) {
+
   }
-  @media screen and (min-width: $break-large) {
-    padding-right: 40%;
+  @include respond-to(small-screens) {
+
   }
 }
 
 
-#titleit {width: 50%; float:left;}
-#titleit button:hover{
-  color:red;
-  cursor: pointer;
-}
-#caption {width: 40%; float:left;text-align: right; }
-#images_counter {width: 10%; float:left; text-align: right;}
 
 
 [data-controls] {
@@ -431,8 +425,8 @@ line-height: normal;
     margin-left: $margeit;
     margin-right: $margeit;
   }
-  #titleit {width: 70%; float:left;}
-  #images_counter {width: 30%; float:left;}
+  #titleit {}
+  #images_counter {}
   #caption{
     display: none;
   }
@@ -475,3 +469,35 @@ line-height: normal;
         opacity: 1;
     }
 }
+
+// PAGE SINGLE
+
+.bottom p {
+  @include respond-to(wide-screens) {
+    padding-right: 60%;
+  }
+  @include respond-to(medium-screens) {
+    padding-right: 50%;
+  }
+  @include respond-to(small-screens) {
+    padding-right: $margeit;
+  }
+}
+.footer {
+  width: 100%;
+  position: fixed;
+  padding: $margeit;
+  bottom: 0px;
+  z-index: 999999;
+  background-color: white;
+  border-top: $border;
+  font-size: 0.8em;
+}
+
+#titleit {width: 50%;  padding-bottom: $margeit}
+#titleit button:hover{
+  color:red;
+  cursor: pointer;
+}
+#caption {width: 40%; float: left;}
+#images_counter {text-align: right;}
