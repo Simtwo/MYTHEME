@@ -180,11 +180,12 @@ input:checked + label::before {
   /* Safari and Chrome */
   -o-animation: fadein 1s;
   /* Opera */
-  width: calc(100% - (10px*2));
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: calc((10px*2));
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
   border-bottom: 1px solid black;
+  border-top: 1px solid black;
   padding-bottom: 10px;
 }
 
@@ -197,9 +198,9 @@ input:checked + label::before {
   -o-animation: fadein 1s;
   /* Opera */
   padding-top: 10px;
-  width: calc(100% - (10px*2));
-  margin-left: 10px;
-  margin-right: 10px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
   border-bottom: 1px solid black;
   padding-bottom: 10px;
   margin-bottom: 10px;
@@ -214,9 +215,9 @@ input:checked + label::before {
   -o-animation: fadein 1s;
   /* Opera */
   padding-top: 10px;
-  width: calc(100% - (10px*2));
-  margin-left: 10px;
-  margin-right: 10px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
   border-bottom: 1px solid black;
   padding-bottom: 10px;
 }

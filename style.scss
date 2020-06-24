@@ -208,11 +208,12 @@ input:checked + label::before {
 
 .informations {
   @include fadein;
-  width: calc(100% - (#{$margeit}*2));
-  margin-left: $margeit;
-  margin-right: $margeit;
-  margin-top: calc((#{$margeit}*2));
+  width: 100%;
+  padding-left: $margeit;
+  padding-right: $margeit;
+  padding-top: $margeit;
   border-bottom: $border;
+  border-top: $border;
   padding-bottom: $margeit;
 }
 
@@ -220,9 +221,9 @@ input:checked + label::before {
 .informations2 {
   @include fadein;
   padding-top: $margeit;
-  width: calc(100% - (#{$margeit}*2));
-  margin-left: $margeit;
-  margin-right: $margeit;
+  width: 100%;
+  padding-left: $margeit;
+  padding-right: $margeit;
   border-bottom: $border;
   padding-bottom: $margeit;
   margin-bottom: $margeit;
@@ -230,9 +231,9 @@ input:checked + label::before {
 .informations3 {
   @include fadein;
   padding-top: $margeit;
-  width: calc(100% - (#{$margeit}*2));
-  margin-left: $margeit;
-  margin-right: $margeit;
+  width: 100%;
+  padding-left: $margeit;
+  padding-right: $margeit;
   border-bottom: $border;
   padding-bottom: $margeit;
 }
